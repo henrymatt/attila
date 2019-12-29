@@ -9,6 +9,7 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://use.typekit.net/xvy1ccq.css">
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
 	{{ghost_head}}
@@ -16,21 +17,17 @@
 
 <body class="{{body_class}}">
 
-	{{navigation}}
+    {{{body}}}
+    <div id="body-class" style="display: none;" class="{{body_class}}"></div>
 
-	<section id="wrapper">
-		<a class="hidden-close"></a>
-		{{{body}}}
-		<div id="body-class" style="display: none;" class="{{body_class}}"></div>
+    <footer id="footer">
+        <div class="inner">
+            <section class="credits">
+                <span class="copyright">Copyright 2020, Matt Henry</span>
+            </section>
+        </div>
+    </footer>
 
-		<footer id="footer">
-			<div class="inner">
-				<section class="credits">
-					<span class="copyright">Copyright 2020, Matt Henry</span>
-				</section>
-			</div>
-		</footer>
-	</section>
 
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
 
