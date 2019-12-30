@@ -107,6 +107,13 @@ body {
   color: $primary-color;
 }
 
+/* Articles */
+.post-content {
+  background: $color-white;
+  color: $color-black;
+  padding: 20px;
+}
+
 /* Pagination */
 .pagination {
   color: $color-white;
