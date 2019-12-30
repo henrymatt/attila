@@ -1,21 +1,21 @@
 @import "normalize";
 @import "colors";
-@import "icons";
-@import "fonts";
-@import "highlight";
 
+/* General */
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: acumin-pro, sans-serif;
-  background: #19578B;
+  background: $primary-color;
 }
 
+/* Main Header */
 #blog-header {
   text-align: center;
-  background: #19578B;
+  background: $primary-color;
+  margin-bottom: 40px;
 }
 
 #blog-header h1 {
@@ -24,13 +24,21 @@ body {
   color: white;
 }
 
+.blog-header__portrait {
+  border-radius: 50%;
+  width: 150px;
+}
+
 #blog-header p {
   color: white;
 }
 
+
+/* Topic List */
 .topics__list {
   background: white;
-  padding: 0 20px;
+  padding: 0 20px 20px;
+  margin-bottom: 40px;
 }
 
 .topics__list h2 {
@@ -48,44 +56,47 @@ body {
   color: #19578B;
 }
 
-.articles {
-  margin-top: 40px;
-}
-
-.articles__article {
-  background: white;
-  border-bottom: #19578B 1px dotted;
-  padding-bottom: 15px;
-}
-.articles__article a {
-  text-decoration: none;
-  color: black;
-}
-
-.articles__article--info {
-  font-size: 0.75em;
-  color: grey;
-}
-
-.articles__article--title {
-  margin-top: 0;
-  margin-bottom: 5px;
+/* Article Previews */
+.article-previews__header {
+  color: $color-white;
   font-weight: 400;
-  padding: 0 5px;
-  font-size: 1.25em;
-  line-height: 1em;
+  margin: 5px 20px;
+  font-size: 1em;
 }
 
-.articles__article--title a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.8em;
+.article-preview {
+  position: relative;
+  background: $color-white;
+  padding: 0 20px;
+  margin-bottom: 2px;
 }
 
-.articles__article--date {
-  margin: 0 5px;
+.article-preview--title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: $color-black;
+  text-decoration-color: black;
 }
 
+.article-preview--topic {
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 0 10px;
+  background: $primary-color;
+  color: $color-white;
+  font-family: bookman-jf-pro, serif;
+}
+
+.article-preview--date {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  color: $primary-color;
+}
+
+/* Footer */
 #footer {
   width: 100%;
   padding: 20px 40px;

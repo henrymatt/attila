@@ -1,7 +1,7 @@
 {{!< default}}
 <header id="blog-header">
     <h1>Hi, I'm Matt.</h1>
-    {{#if primary_author.profile_image}}<img src="{{primary_author.profile_image}}" alt="Author image" />{{/if}}
+    <img src="/assets/img/matt-portrait.jpg" alt="portrait of matt henry" class="blog-header__portrait"/>
     <p>I try to explain the things I like.</p>
 </header>
 
@@ -20,19 +20,19 @@
             {{/get}}
         </div>
     </section>
-    <section class="articles">
+
+    <section class="article-previews">
+	    <h2 class="article-previews__header">Latest articles</h2>
         {{#foreach posts}}
-            <article class="articles__article">
-                <a href="{{url}}">
-                    <div class="articles__article--info">
-                        <span class="articles__article--date">{{date}}</span>
-                        <span class="articles__article--topic">{{primary_tag.name}}</span>
-                    </div>
-                    <div class="articles__article--body">
-                        <h2 class="articles__article--title">{{title}}</h2>
-                    </div>
-                </a>
-            </article>
+	        <a href="{{url}}">
+	          <article class="article-preview">
+		          <h2 class="article-preview--title">{{title}}</h2>
+		          <div class="article-preview--topic">{{primary_tag.name}}</div>
+		          <div class="article-preview--date">{{date}}</div>
+	          </article>
+	        </a>
         {{/foreach}}
     </section>
 </main>
+
+
