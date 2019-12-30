@@ -4,8 +4,46 @@
 @import "fonts";
 @import "highlight";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: acumin-pro, sans-serif;
+  background: seashell;
+}
+
+#blog-header {
+  text-align: center;
+}
+
+#blog-header h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.topics__list {
+  background: white;
+  padding: 0 20px;
+}
+
+.topics__list h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topics__bubble-top {
+  width: 100vw;
+  display: block;
+  margin-bottom: -2px;
+}
+
+.topics__bubble-bottom {
+  width: 100vw;
+  display: block;
+  margin-top: -2px;
+  transform: rotate(180deg)
 }
 
 .topic {
@@ -33,6 +71,12 @@ body {
 
 }
 
-.footer {
-
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 40px;
+  text-align: center;
+  background: black;
+  color: white;
 }

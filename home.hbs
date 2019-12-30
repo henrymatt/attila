@@ -3,20 +3,24 @@
     <h1>Hi, I'm Matt.</h1>
     {{#if primary_author.profile_image}}<img src="{{primary_author.profile_image}}" alt="Author image" />{{/if}}
     <p>I try to explain the things I like.</p>
-    <h2>The problem is, I like a lot of things.</h2>
 </header>
 
 <main role="main">
     <section class="topics">
-        {{#get 'tags'}}
-            {{#foreach tags}}
-                {{#if @last}}
-                    <span class="topic"><a href='{{url}}'>{{name}}</a>.</span>
-                {{else}}
-                    <span class="topic"><a href='{{url}}'>{{name}}</a>, </span>
-                {{/if}}
-            {{/foreach}}
-        {{/get}}
+        <img class="topics__bubble-top" src="/assets/img/bubble-top.svg">
+        <div class="topics__list">
+            <h2>The problem is, I like a lot of things.</h2>
+            {{#get 'tags'}}
+                {{#foreach tags}}
+                    {{#if @last}}
+                        <span class="topic"><a href='{{url}}'>{{name}}</a>.</span>
+                    {{else}}
+                        <span class="topic"><a href='{{url}}'>{{name}}</a>, </span>
+                    {{/if}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+        <img class="topics__bubble-bottom" src="/assets/img/bubble-top.svg">
     </section>
     <section class="articles">
         {{#foreach posts}}
