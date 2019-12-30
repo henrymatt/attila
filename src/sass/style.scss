@@ -15,6 +15,7 @@ body {
 #blog-header {
   text-align: center;
   background: $primary-color;
+  margin: 20px;
   margin-bottom: 40px;
 }
 
@@ -33,6 +34,10 @@ body {
   color: white;
 }
 
+.context a {
+  color: $color-white;
+  text-decoration: none;
+}
 
 /* Topic List */
 .topics__list {
@@ -77,7 +82,13 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: $color-black;
-  text-decoration-color: black;
+  text-decoration-color: $color-black;
+}
+
+.article-preview--excerpt {
+  text-decoration: none;
+  text-decoration-style: initial;
+  color: $color-black;
 }
 
 .article-preview--topic {
@@ -94,6 +105,12 @@ body {
   right: 20px;
   display: inline-block;
   color: $primary-color;
+}
+
+/* Pagination */
+.pagination {
+  color: $color-white;
+  margin: 20px;
 }
 
 /* Footer */
