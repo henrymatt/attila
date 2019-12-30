@@ -7,7 +7,6 @@
 
 <main role="main">
     <section class="topics">
-        <img class="topics__bubble-top" src="/assets/img/bubble-top.svg">
         <div class="topics__list">
             <h2>The problem is, I like a lot of things.</h2>
             {{#get 'tags'}}
@@ -20,17 +19,19 @@
                 {{/foreach}}
             {{/get}}
         </div>
-        <img class="topics__bubble-bottom" src="/assets/img/bubble-top.svg">
     </section>
     <section class="articles">
         {{#foreach posts}}
             <article class="articles__article">
-                <span class="articles__article--topic">
-                    <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
-                </span>
-                <h2 class="articles__article--title">
-                    <a href="{{url}}">{{title}}</a>
-                </h2>
+                <a href="{{url}}">
+                    <div class="articles__article--info">
+                        <span class="articles__article--date">{{date}}</span>
+                        <span class="articles__article--topic">{{primary_tag.name}}</span>
+                    </div>
+                    <div class="articles__article--body">
+                        <h2 class="articles__article--title">{{title}}</h2>
+                    </div>
+                </a>
             </article>
         {{/foreach}}
     </section>
