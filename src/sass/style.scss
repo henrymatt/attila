@@ -111,7 +111,12 @@ body {
 .post-content {
   background: $color-white;
   color: $color-black;
+  font-size: 1.2em;
   padding: 20px;
+}
+
+.post-meta {
+  color: $color-white;
 }
 
 /* Pagination */
