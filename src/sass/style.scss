@@ -8,14 +8,14 @@ body {
   font-family: acumin-pro, sans-serif;
 }
 
-h1 {
+.topic {
   font-family: bookman-jf-pro, serif;
 }
 
-.topics a {
-  font-size: 1.5em;
+.topic a {
+  font-family: bookman-jf-pro, serif;
   text-decoration: none;
-  color: black;
+  color: darkblue;
 }
 
 .articles {
@@ -23,7 +23,10 @@ h1 {
 }
 
 .articles__article {
-
+  background: #ccc;
+  border: #eee;
+  padding: 10px;
+  margin: 5px 20px;
 }
 
 .articles__article--title {

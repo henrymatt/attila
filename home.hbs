@@ -1,6 +1,8 @@
 {{!< default}}
 <header id="blog-header">
-    <h1>Hi, I'm Matt. I try to explain things that I like.</h1>
+    <h1>Hi, I'm Matt.</h1>
+    {{#if primary_author.profile_image}}<img src="{{primary_author.profile_image}}" alt="Author image" />{{/if}}
+    <p>I try to explain the things I like.</p>
     <h2>The problem is, I like a lot of things.</h2>
 </header>
 
@@ -8,15 +10,18 @@
     <section class="topics">
         {{#get 'tags'}}
             {{#foreach tags}}
-                <a href='{{url}}'>{{name}}</a>
+                {{#if @last}}
+                    <span class="topic"><a href='{{url}}'>{{name}}</a>.</span>
+                {{else}}
+                    <span class="topic"><a href='{{url}}'>{{name}}</a>, </span>
+                {{/if}}
             {{/foreach}}
         {{/get}}
     </section>
     <section class="articles">
-        <heading>Latest Articles</heading>
         {{#foreach posts}}
             <article class="articles__article">
-                <h1 class="articles__article--title">{{title}}</h1>
+                <h2 class="articles__article--title">{{title}}</h2>
             </article>
         {{/foreach}}
     </section>
