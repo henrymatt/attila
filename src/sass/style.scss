@@ -10,17 +10,22 @@
 
 body {
   font-family: acumin-pro, sans-serif;
-  background: seashell;
+  background: #19578B;
 }
 
 #blog-header {
   text-align: center;
-  background: seashell
+  background: #19578B;
 }
 
 #blog-header h1 {
   font-size: 2em;
-  font-weight: 400;
+  font-weight: bold;
+  color: white;
+}
+
+#blog-header p {
+  color: white;
 }
 
 .topics__list {
@@ -53,8 +58,7 @@ body {
 
 .topic a {
   font-family: bookman-jf-pro, serif;
-  text-decoration: none;
-  color: darkblue;
+  color: #19578B;
 }
 
 .articles {
@@ -62,8 +66,7 @@ body {
 }
 
 .articles__article {
-  background: seashell;
-  border: #eee;
+  background: #19578B;
   margin: 0;
 }
 
@@ -76,13 +79,13 @@ body {
 
 .articles__article--topic a {
   font-family: bookman-jf-pro, serif;
-  text-decoration: none;
-  color: darkblue;
+  color: #19578B;
   margin: 0 10px;
 }
 
 .articles__article--title {
   margin-top: 0;
+  font-weight: 400;
   padding: 10px;
   line-height: 1em;
   background: white;
@@ -95,11 +98,9 @@ body {
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding: 20px 40px;
   text-align: center;
-  background: black;
+  background: #19578B;
   color: white;
 }
