@@ -15,6 +15,7 @@ body {
 
 #blog-header {
   text-align: center;
+  background: seashell
 }
 
 #blog-header h1 {
@@ -57,18 +58,40 @@ body {
 }
 
 .articles {
-
+  margin-top: 40px;
 }
 
 .articles__article {
-  background: #ccc;
+  background: seashell;
   border: #eee;
-  padding: 10px;
-  margin: 5px 20px;
+  margin: 0;
+}
+
+.articles__article--topic {
+  font-size: 0.75em;
+  background: white;
+  padding: 5px 20px;
+  border-radius: 0 20px 0 0;
+}
+
+.articles__article--topic a {
+  font-family: bookman-jf-pro, serif;
+  text-decoration: none;
+  color: darkblue;
+  margin: 0 10px;
 }
 
 .articles__article--title {
+  margin-top: 0;
+  padding: 10px;
+  line-height: 1em;
+  background: white;
+}
 
+.articles__article--title a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
 }
 
 #footer {

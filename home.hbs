@@ -25,7 +25,12 @@
     <section class="articles">
         {{#foreach posts}}
             <article class="articles__article">
-                <h2 class="articles__article--title">{{title}}</h2>
+                <span class="articles__article--topic">
+                    <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                </span>
+                <h2 class="articles__article--title">
+                    <a href="{{url}}">{{title}}</a>
+                </h2>
             </article>
         {{/foreach}}
     </section>
