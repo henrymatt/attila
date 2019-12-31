@@ -4,22 +4,21 @@
 
 <header id="article-header">
     <nav id="dynamic-sticky-header">
-        <div id="static-header">
-            <a href="/">Return Home</a>
+        <div class="left-element">
+            <a class="back-home" href="/">
+                <img src="/assets/img/back-arrow.png" alt="Back to home">
+            </a>
+        </div>
+        <div class="center-element">
+            <div class="brand">Matt Henry</div>
             <h1 class="post-title">{{title}}</h1>
-            <span class="post-meta">
-                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-            </span>
-        </div>
-        <div id="fixed-scrolling-header">
-            <div class="left-element">
-                <a class="back-home" href="/">
-                    <img src="/assets/img/back-arrow.png">
-                </a>
+            <div class="post-meta">
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time>
+                <span> | </span>
+                <span>{{primary_tag.name}}</span>
             </div>
-            <div class="center-element"><h1 class="post-title">{{title}}</h1></div>
-            <div class="right-element"></div>
         </div>
+        <div class="right-element"></div>
     </nav>
 </header>
 

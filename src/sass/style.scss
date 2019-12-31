@@ -115,35 +115,33 @@ main {
 /* Dynamic Sticky Header */
 #dynamic-sticky-header {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-#dynamic-sticky-header #static-header {
+#dynamic-sticky-header .post-meta {
   display: block;
 }
 
-#dynamic-sticky-header #fixed-scrolling-header {
+#dynamic-sticky-header.scrolling .post-meta {
   display: none;
 }
 
-#dynamic-sticky-header.scrolling #static-header {
-  display: none;
-}
-
-#dynamic-sticky-header.scrolling #fixed-scrolling-header {
+#dynamic-sticky-header {
   display: flex;
-}
-
-#fixed-scrolling-header {
-  display: flex;
-  height: 50px;
+  height: 200px;
   background: $primary-color;
 }
 
-#fixed-scrolling-header .left-element {
+#dynamic-sticky-header.scrolling {
+  height: 50px;
+}
+
+#dynamic-sticky-header .left-element {
   width: 50px;
+  height: 50px;
   flex-shrink: 0;
 }
 
@@ -159,22 +157,38 @@ main {
   width: 50%;
 }
 
-#fixed-scrolling-header .right-element {
+#dynamic-sticky-header .right-element {
   width: 50px;
+  height: 50px;
   flex-shrink: 0;
 }
 
-#fixed-scrolling-header .center-element {
+#dynamic-sticky-header .center-element {
   display: flex;
   min-width: 0;
   padding: 0 10px;
   flex-grow: 1;
   align-items: center;
+  flex-direction: column;
 }
 
-#fixed-scrolling-header h1 {
-  margin: 0;
+#dynamic-sticky-header.scrolling .center-element {
+  flex-direction: row;
+}
+
+#dynamic-sticky-header h1 {
+  overflow: visible;
+  margin: 0 0 15px 0;
   color: white;
+  white-space: normal;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#dynamic-sticky-header.scrolling h1 {
+  margin: 0;
+  text-align: left;
   font-size: 1.2em;
   font-weight: 400;
   white-space: nowrap;
@@ -182,8 +196,19 @@ main {
   text-overflow: ellipsis;
 }
 
+#dynamic-sticky-header .brand {
+  display: block;
+  margin: 10px;
+  color: $color-white;
+  font-size: 1.2em;
+}
+
+#dynamic-sticky-header.scrolling .brand {
+  display: none;
+}
+
 #article-content {
-  margin-top: 200px;
+  margin-top: 175px;
 }
 
 .post-content {
