@@ -3,10 +3,24 @@
 {{#post}}
 
 <header id="article-header">
-	<nav class="context-static"><a href="/">Return Home</a></nav>
-    <nav class="context-scrolling"><a href="/">◄</a></nav>
-	<h1 class="post-title">{{{title}}}</h1>
-	<span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> | {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+    <nav id="dynamic-sticky-header">
+        <div id="static-header">
+            <a href="/">Return Home</a>
+            <h1 class="post-title">{{title}}</h1>
+            <span class="post-meta">
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+            </span>
+        </div>
+        <div id="fixed-scrolling-header">
+            <div class="left-element">
+                <a class="back-home" href="/">
+                    <img src="/assets/img/back-arrow.png">
+                </a>
+            </div>
+            <div class="center-element"><h1 class="post-title">{{title}}</h1></div>
+            <div class="right-element"></div>
+        </div>
+    </nav>
 </header>
 
 <main id="article-content" class="content" role="main">
