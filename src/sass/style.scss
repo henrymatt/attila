@@ -52,7 +52,7 @@ main {
 .topics__list h2 {
   font-size: 1em;
   font-weight: 400;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .topic {
@@ -72,11 +72,15 @@ main {
   font-size: 1em;
 }
 
+.article-previews a {
+  text-decoration: none;
+}
+
 .article-preview {
   position: relative;
   background: $color-white;
   padding: 0 20px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .article-preview--title {
@@ -207,6 +211,19 @@ main {
   display: none;
 }
 
+.post-tag a {
+  color: white;
+  font-family: bookman-jf-pro, serif;
+}
+
+#article-list {
+  margin-top: 100px;
+}
+
+.content a {
+  text-decoration: none;
+}
+
 #article-content {
   margin-top: 175px;
 }
@@ -225,7 +242,8 @@ main {
 /* Pagination */
 .pagination {
   color: $color-white;
-  margin: 20px;
+  background: $primary-color;
+  padding: 20px;
 }
 
 /* Footer */

@@ -1,1 +1,1 @@
-function scrolling(){var o=document.getElementById("dynamic-sticky-header");10<document.body.scrollTop||10<document.documentElement.scrollTop?o.classList.add("scrolling"):o.classList.remove("scrolling")}window.onscroll=function(){scrolling()};
+function scrolling(){if(document.getElementById("dynamic-sticky-header")){var c=document.getElementById("dynamic-sticky-header");10<document.body.scrollTop||10<document.documentElement.scrollTop?c.classList.add("scrolling"):c.classList.remove("scrolling")}}window.onscroll=function(){scrolling()};

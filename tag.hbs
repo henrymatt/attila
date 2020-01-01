@@ -1,16 +1,27 @@
 {{!< default}}
 
-<header id="blog-header">
-	<nav class="context"><a href="/">Return Home</a></nav>
-	<h1>Articles on {{tag.name}}</h1>
+{{#tag}}
+<header id="article-header">
+    <nav id="dynamic-sticky-header">
+        <div class="left-element">
+            <a class="back-home" href="/">
+                <img src="/assets/img/back-arrow.png" alt="Back to home">
+            </a>
+        </div>
+        <div class="center-element">
+            <div class="brand">Matt Henry</div>
+            <h1 class="post-title">{{name}}</h1>
+            <div class="post-meta">
+                <span>All Articles about {{name}}</span>
+            </div>
+        </div>
+        <div class="right-element"></div>
+    </nav>
 </header>
+{{/tag}}
 
-<div id="index" class="container">
-
+<div id="article-list">
 	<main class="content" role="main">
-
 		{{> "loop"}}
-
 	</main>
-
 </div>
