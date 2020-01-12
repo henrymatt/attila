@@ -2,34 +2,31 @@
 
 {{#post}}
 
-<header id="article-header">
-    <nav id="dynamic-sticky-header">
-        <div class="left-element">
-            <a class="back-home" href="/">
-                <img src="/assets/img/back-arrow.png" alt="Back to home">
-            </a>
-        </div>
-        <div class="center-element">
-            <div class="brand">Matt Henry</div>
-            <h1 class="post-title">{{title}}</h1>
-            <div class="post-meta">
-                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time>
-                <span> | </span>
-                <span class="post-tag"><a href="{{primary_tag.url}}">{{primary_tag.name}}</a></span>
-            </div>
-        </div>
-        <div class="right-element"></div>
-    </nav>
-</header>
-
 <main id="article-content" class="content" role="main">
-	<article class="{{post_class}}">
-		<div class="inner">
-			<section class="post-content">
-				{{content}}
-			</section>
-		</div>
-	</article>
+    <header id="article-header">
+        <nav id="dynamic-sticky-header">
+            <div class="left-element">
+                <a class="back-home" href="/">
+                    <img src="/assets/img/back-arrow.png" alt="Back to home">
+                </a>
+            </div>
+            <div class="center-element">
+                <div class="brand">Matt Henry</div>
+                <h1 class="post-title">{{title}}</h1>
+                <div class="post-meta">
+                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time>
+                    <span> | </span>
+                    <span class="post-tag"><a href="{{primary_tag.url}}">{{primary_tag.name}}</a></span>
+                </div>
+            </div>
+            <div class="right-element"></div>
+        </nav>
+    </header>
+    <div class="content-under-sticky-header">
+        <section class="post-content">
+            {{content}}
+        </section>
+    </div>
 </main>
 
 {{/post}}
