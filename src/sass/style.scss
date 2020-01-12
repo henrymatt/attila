@@ -11,6 +11,13 @@ body {
   background: $color-white;
 }
 
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+    margin: auto;
+  }
+}
+
 main {
   background: $primary-color;
 }
@@ -45,14 +52,14 @@ main {
 /* Topic List */
 .topics__list {
   background: white;
-  padding: 0 20px 20px;
+  padding: 20px;
   margin-bottom: 40px;
 }
 
 .topics__list h2 {
   font-size: 1em;
   font-weight: 400;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .topic {
