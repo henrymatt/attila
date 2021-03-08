@@ -1,37 +1,35 @@
 {{!< default}}
-<header id="blog-header">
-    <h1>Hi, I'm Matt.</h1>
-    <img src="/assets/img/matt-portrait.jpg" alt="portrait of matt henry" class="blog-header__portrait"/>
-    <p>I try to explain the things I like.</p>
-</header>
-
 <main role="main">
-    <section class="topics">
-        <div class="topics__list">
-            <h2>The problem is, I like a lot of things.</h2>
-            {{#get 'tags'}}
-                {{#foreach tags}}
-                    {{#if @last}}
-                        <span class="topic"><a href='{{url}}'>{{name}}</a>.</span>
-                    {{else}}
-                        <span class="topic"><a href='{{url}}'>{{name}}</a>, </span>
-                    {{/if}}
-                {{/foreach}}
-            {{/get}}
-        </div>
+    <header id="site-header">
+        <h1>Hi, I'm Matt.</h1>
+        <p>I'm a course author, game enthusiast, and product manager.</p>
+    </header>
+    <section id="courses">
+        <h2>My courses</h2>
+        <article class="course">
+            <div class="image">
+                <img src="assets/img/course-thumb-css-grid@1x.png" alt="">
+            </div>  
+            <a href="https://app.pluralsight.com/library/courses/css-grid-creating-layouts"><h3>Creating Layouts with CSS Grid</h3></a>
+            <p class="metadata">1h 42m | Pluralsight | 2020</p>
+            <p class="description">A practical overview of the CSS Grid specification, used to create hack-free web layouts.</p>
+        </article>
+        <article class="course">
+            <div class="image">
+                <img src="assets/img/course-thumb-css-grid@1x.png" alt="">
+            </div>  
+            <a href="https://app.pluralsight.com/library/courses/accessibility-website-structure-comprehension/table-of-contents"><h3>Accessibility: Website Structure and Comprehension</h3></a>
+            <p class="metadata">1h 35m | Pluralsight | 2020</p>
+            <p class="description">A practical overview of the CSS Grid specification, used to create hack-free web layouts.</p>
+        </article>
     </section>
-
-    <section class="article-previews">
-	    <h2 class="article-previews__header">Latest articles</h2>
-        {{#foreach posts}}
-	        <a href="{{url}}">
-	          <article class="article-preview">
-		          <h2 class="article-preview--title">{{title}}</h2>
-		          <div class="article-preview--topic">{{primary_tag.name}}</div>
-		          <div class="article-preview--date">{{date}}</div>
-	          </article>
-	        </a>
-        {{/foreach}}
+    <section id="gaming">
+        <h2>Gaming</h2>
+        <p>I publish gaming videos on my YouTube channel.</p>
+    </section>
+    <section id="about">
+        <h2>About me</h2>
+        <p>Never update. Always remake.</p>
     </section>
 </main>
 

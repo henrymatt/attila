@@ -6,10 +6,80 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: acumin-pro, sans-serif;
-  background: $primary-color;
+h1, h2 {
+  font-family: montserrat, sans-serif;
 }
+
+body {
+  font-family: museo-sans, Helvetica, Arial, sans-serif;
+  background: #000;
+  color: white;
+}
+
+#site-header {
+  margin: 6em 2em 1em 2em;
+  text-align: center;
+  font-size: 1.25em;
+  border-bottom: 1px #9EC0FF solid;
+
+  p {
+    font-size: 1.25em;
+  }
+}
+
+section {
+  margin: 4em 2em;
+  line-height: 1.5em;
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+article.course {
+
+  display: grid;
+  grid: auto-flow min-content / max-content 1fr;
+  margin: 2em 0;
+
+  .image {
+    grid-row: 1 / 5;
+    padding-right: 1em;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+  a {
+    color: #9EC0FF;
+  }
+
+  p {
+    margin: 0.25em 0;
+  }
+
+  .metadata {
+    color: #aaa;
+  }
+}
+
+footer {
+  border-top: 1px #9EC0FF solid;
+  margin: 0 2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
 
 @media (min-width: 800px) {
   section {
@@ -18,18 +88,9 @@ body {
   }
 }
 
-main {
-  background: $primary-color;
-}
-
-img {
-  max-width: 100%;
-}
-
 /* Main Header */
 #blog-header {
   text-align: center;
-  background: $primary-color;
   padding: 20px;
 }
 
@@ -261,14 +322,6 @@ img {
   padding: 20px;
 }
 
-/* Footer */
-#footer {
-  width: 100%;
-  padding: 20px 40px;
-  text-align: center;
-  background: #19578B;
-  color: white;
-}
 
 
 /* ==========================================================================
