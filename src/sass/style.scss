@@ -16,7 +16,7 @@ body {
   color: white;
 }
 
-#site-header {
+header {
   margin: 6em 2em 1em 2em;
   text-align: center;
   font-size: 1.25em;
@@ -82,9 +82,9 @@ footer {
 
 
 @media (min-width: 800px) {
-  section {
+  header, footer, section {
     width: 800px;
-    margin: auto;
+    margin: 4em auto;
   }
 }
 
