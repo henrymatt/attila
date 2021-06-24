@@ -28,7 +28,8 @@ section {
     grid-column: 1 / -1;
     border-bottom: 1px solid black;
     font-size: 1.25em;
-    margin-bottom: 0.1em;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
   }
 }
 
@@ -45,8 +46,6 @@ section {
 }
 
 .article-preview {
-  margin: 1em 0 0 0;
-
   a {
     text-decoration: none;
     color: black;
@@ -122,6 +121,27 @@ footer {
   font-family: clarendon-urw, serif;
   font-weight: 300;
   margin: 0;
+}
+
+/* Homepage */
+
+article.site-section {
+  background: $light-grey;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  h3 {
+    font-family: montserrat, sans-serif;
+  }
+
+  p {
+    font-family: clarendon-urw, serif;
+    font-weight: 300;
+  }
 }
 
 /* Index (List of Tags) */

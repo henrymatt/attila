@@ -10,14 +10,31 @@
     <section class="header-section">
         <h2>Explore</h2>
         <div class="even-grid">
-            sections go Here
+            <article class="site-section">
+                <a href="/courses/">
+                    <h3>Courses</h3>
+                    <p>Courses I done made</p>
+                </a>
+            </article>
+            <article class="site-section">
+                <a href="/articles/">
+                    <h3>Articles</h3>
+                    <p>Articles I done wrote</p>
+                </a>
+            </article>
+            <article class="site-section">
+                <a href="https://www.youtube.com/channel/UCblCTVH8AHo2GEccKYKB7Uw">
+                    <h3>Videos</h3>
+                    <p>Let's Play gaming videos</p>
+                </a>
+            </article>
         </div>
     </section>
 
     <section>
         <h2>Latest</h2>
         <div class="even-grid">
-            {{#get "posts" limit="3"}}
+            {{#get "posts" limit="6"}}
             {{#foreach posts}}
             <article class="article-preview">
                 <a href="{{url}}">
