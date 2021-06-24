@@ -1,12 +1,19 @@
 {{!< default}}
 
 {{#post}}
-
-
-{{feature_image}}
-{{title}}
-{{published_at}}
-{{excerpt}}
-{{content}}
-
+<img class="post-feature" src="{{feature_image}}">
+<main class="article-main">
+    <h1>{{title}}</h1>
+    <div class="article-grid">
+        <div class="date">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                {{date format="MMM D, YYYY"}}
+            </time>
+        </div>
+        <div class="excerpt">
+            <p>{{excerpt}}</p>
+        </div>
+        <div class="content">{{content}}</div>
+    </div>
+</main>
 {{/post}}
