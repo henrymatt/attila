@@ -4,11 +4,11 @@
 	<p>Maybe it’s educational, maybe it’s interesting, maybe neither.</p>
 	<p>Here are the things I cared enough to write about.</p>
 </div>
-<main class="content" role="main"></main>
+<main class="content" role="main">
 	<div class="tag-list">
 		{{#get "tags" limit="all"}}
 		{{#foreach tags}}
-			<div class="tag-container">
+			<div class="tag-container fixed-width-main-content">
 				<div class="tag-name">
 					<h2>{{name}}</h2>
 				</div>
@@ -21,8 +21,10 @@
 				{{#get "posts" filter="primary_tag:{{slug}}" limit="2"}}
 				{{#foreach posts}}
 				<article class="article-preview">
-					<img src="{{feature_image}}" alt="">
-					<p>{{title}}</p>
+					<a href="{{url}}">
+						<img src="{{feature_image}}" alt="">
+						<p>{{title}}</p>
+					</a>
 				</article>
 				{{/foreach}}
 				{{/get}}

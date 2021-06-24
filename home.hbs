@@ -1,69 +1,28 @@
 {{!< default}}
-<main>
-    <header>
-        <div class="slogan">
-            <div class="stacked-text">
-                <span class="top">make,</span>
-                <span class="bottom">cool stuff</span>
-            </div>
-            <div class="stacked-text">
-                <span class="top">play,</span>
-                <span class="bottom">games</span>
-            </div>
-            <div class="stacked-text">
-                <span class="top">learn</span>
-                <span class="bottom">everything!</span>
-            </div>
-        </div>
+<div class="general-header">
+	<h1>Make, Play, Learn</h1>
+	<p>{{@site.description}}</p>
+</div>
+<main class="content fixed-width-main-content" role="main">
 
-        <div class="bio">
-            <img src="assets/img/matt-portrait.jpg" alt="matt's portrait">
-            <p>I'm a course author, product manager, and game enthusiast. I learn things and explain them as best as I can. This site features the things I've made.</p>
-        </div>
-    </header>
-    <div class="content">
-        <section class="explore">
-            <h2>explore</h2>
-            <a href="#">
-                <article>
-                    <h3>Courses</h3>
-                    <p>Gain tech skills with easy-to-understand explanations</p>
-                </article>
+    <section class="header-section">
+        <h2>Explore</h2>
+        sections go Here
+    </section>
+
+    <section>
+        <h2>Latest</h2>
+        {{#get "posts" limit="3"}}
+		{{#foreach posts}}
+        <article class="article-preview">
+            <a href="{{url}}">
+                <img src="{{feature_image}}" alt="">
+                <p>{{title}}</p>
             </a>
-            <a href="#">
-                <article>
-                    <h3>Articles</h3>
-                    <p>Short-form educational content and personal blogs</p>
-                </article>
-            </a>
-            <a href="#">
-                <article>
-                    <h3>Videos</h3>
-                    <p>Moving pictures that talk to you</p>
-                </article>
-            </a>
-        </section>
-        <section class="latest">
-            <h2>the latest</h2>
-            <a href="#">
-                <article>
-                    <span class="category">development</span>
-                    <h3>Video Workflow with FFMPEG</h3>
-                </article>
-            </a>
-            <a href="#">
-                <article>
-                    <span class="category">gaming</span>
-                    <h3>Myst ch. 2</h3>
-                </article>
-            </a>
-            <a href="#">
-                <article>
-                    <span class="category">gaming</span>
-                    <h3>Myst ch. 1</h3>
-                </article>
-            </a>
-        </section>
-    </div>
-    
+        </article>
+        {{/foreach}}
+        {{/get}}
+    </section>
+
 </main>
+
