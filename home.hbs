@@ -1,27 +1,33 @@
 {{!< default}}
+
 <div class="general-header">
 	<h1>Make, Play, Learn</h1>
 	<p>{{@site.description}}</p>
 </div>
-<main class="content fixed-width-main-content" role="main">
+
+<main class="fixed-width-main-content" role="main">
 
     <section class="header-section">
         <h2>Explore</h2>
-        sections go Here
+        <div class="even-grid">
+            sections go Here
+        </div>
     </section>
 
     <section>
         <h2>Latest</h2>
-        {{#get "posts" limit="3"}}
-		{{#foreach posts}}
-        <article class="article-preview">
-            <a href="{{url}}">
-                <img src="{{feature_image}}" alt="">
-                <p>{{title}}</p>
-            </a>
-        </article>
-        {{/foreach}}
-        {{/get}}
+        <div class="even-grid">
+            {{#get "posts" limit="3"}}
+            {{#foreach posts}}
+            <article class="article-preview">
+                <a href="{{url}}">
+                    <img src="{{feature_image}}" alt="">
+                    <p>{{title}}</p>
+                </a>
+            </article>
+            {{/foreach}}
+            {{/get}}
+        </div>
     </section>
 
 </main>
