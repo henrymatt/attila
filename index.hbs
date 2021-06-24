@@ -8,7 +8,7 @@
 
 <main class="fixed-width-main-content" role="main">
 	
-	{{#get "tags" limit="all"}}
+	{{#get "tags" filter="name:-Courses" limit="all"}}
 	{{#foreach tags}}
 	<section class="header-section">
 		<h2>{{name}}</h2>

@@ -23,6 +23,8 @@ body {
 }
 
 section {
+  margin-bottom: 2em;
+
   h2 {
     display: block;
     grid-column: 1 / -1;
@@ -168,6 +170,30 @@ article.site-section {
   }
 }
 
+/* Courses */
+
+.course-display {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2em;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.course-metadata {
+  time {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: clarendon-urw, serif;
+    font-weight: 300;
+  }
+}
+
 /* Posts */
 
 .article-grid {
@@ -200,21 +226,21 @@ img.post-feature {
 
 .date { 
   grid-area: date;
-}
 
-.date time {
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
+  time {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+  }
 }
 
 .excerpt {
   grid-area: excerpt;
-}
 
-.excerpt p {
-  font-family: clarendon-urw, serif;
-  font-weight: 400;
-  min-width: 20ch;
+  p {
+    font-family: clarendon-urw, serif;
+    font-weight: 400;
+    min-width: 20ch;
+  }
 }
 
 .content {

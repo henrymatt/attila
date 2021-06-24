@@ -1,0 +1,26 @@
+{{!< default}}
+<div class="general-header">
+	<h1>Courses</h1>
+	<p>Courses I have published</p>
+</div>
+
+<main class="fixed-width-main-content" role="main">
+
+    {{#get "posts" filter="primary_tag:courses"}}
+    {{#foreach posts}}
+    <section class="header-section">
+        <h2>{{title}}</h2>
+        <div class="course-display">
+            <img src="{{feature_image}}" alt="">
+            <div class="course-metadata">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                    {{date format="MMMM YYYY"}}
+                </time>
+                <p>{{excerpt}}</p>
+            </div>
+            
+        </div>
+    </section>
+    {{/foreach}}
+    {{/get}}
+</main>
