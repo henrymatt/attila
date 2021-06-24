@@ -1,51 +1,69 @@
 {{!< default}}
-<main role="main">
-    <header id="site-header">
-        <h1>Hi, I'm Matt.</h1>
-        <p>I'm a course author, game enthusiast, and product manager.</p>
+<main>
+    <header>
+        <div class="slogan">
+            <div class="stacked-text">
+                <span class="top">make,</span>
+                <span class="bottom">cool stuff</span>
+            </div>
+            <div class="stacked-text">
+                <span class="top">play,</span>
+                <span class="bottom">games</span>
+            </div>
+            <div class="stacked-text">
+                <span class="top">learn</span>
+                <span class="bottom">everything!</span>
+            </div>
+        </div>
+
+        <div class="bio">
+            <img src="assets/img/matt-portrait.jpg" alt="matt's portrait">
+            <p>I'm a course author, product manager, and game enthusiast. I learn things and explain them as best as I can. This site features the things I've made.</p>
+        </div>
     </header>
-    <section id="courses">
-        <h2>My courses</h2>
-        <article class="course">
-            <div class="image">
-                <img
-                 srcset="assets/img/course-thumb-css-grid@1x.png, assets/img/course-thumb-css-grid@2x.png 2x"
-                 src="assets/img/course-thumb-css-grid@2x.png" 
-                 alt="Screenshot from CSS Grid course">
-            </div>  
-            <a href="https://app.pluralsight.com/library/courses/css-grid-creating-layouts"><h3>Creating Layouts with CSS Grid</h3></a>
-            <p class="metadata">1h 42m | Pluralsight | 2020</p>
-            <p class="description">A practical overview of the CSS Grid specification, used to create hack-free web layouts.</p>
-        </article>
-        <article class="course">
-            <div class="image">
-                <img
-                srcset="assets/img/course-thumb-accessibility@1x.png, assets/img/course-thumb-accessibility@2x.png 2x" 
-                src="assets/img/course-thumb-accessibility@2x.png" alt="Screenshot from accessibility course">
-            </div>  
-            <a href="https://app.pluralsight.com/library/courses/accessibility-website-structure-comprehension/table-of-contents"><h3>Accessibility: Website Structure and Comprehension</h3></a>
-            <p class="metadata">1h 35m | Pluralsight | 2020</p>
-            <p class="description">A new approach to web development basics, putting accessibility best practices at the center.</p>
-        </article>
-    </section>
-    <section id="games">
-        <h2>Games</h2>
-        <article class="course">
-            <div class="image">
-                <img
-                 srcset="assets/img/yt-channel@1x.png, assets/img/yt-channel@2x.png 2x"
-                 src="assets/img/yt-channel@2x.png" 
-                 alt="Screenshot from CSS Grid course">
-            </div>  
-            <a href="https://www.youtube.com/channel/UCblCTVH8AHo2GEccKYKB7Uw"><h3>Fancymatt Games</h3></a>
-            <p class="description">My YouTube channel, where I do game playthroughs.</p>
-        </article>
-    </section>
-    <section id="about">
-        <h2>About me</h2>
-        <p>I've been working in the elearning industry since 2010 in video production and product management roles. I'm interested in using technology to make learning easier, and living up to my motto of "there are no complicated subjects, just bad explanations."</p>
-        <p>My hobbies include games of all sort, game design, development, languages, and travel.</p>
-    </section>
+    <div class="content">
+        <section class="explore">
+            <h2>explore</h2>
+            <a href="#">
+                <article>
+                    <h3>Courses</h3>
+                    <p>Gain tech skills with easy-to-understand explanations</p>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <h3>Articles</h3>
+                    <p>Short-form educational content and personal blogs</p>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <h3>Videos</h3>
+                    <p>Moving pictures that talk to you</p>
+                </article>
+            </a>
+        </section>
+        <section class="latest">
+            <h2>the latest</h2>
+            <a href="#">
+                <article>
+                    <span class="category">development</span>
+                    <h3>Video Workflow with FFMPEG</h3>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <span class="category">gaming</span>
+                    <h3>Myst ch. 2</h3>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <span class="category">gaming</span>
+                    <h3>Myst ch. 1</h3>
+                </article>
+            </a>
+        </section>
+    </div>
+    
 </main>
-
-
