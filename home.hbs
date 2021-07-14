@@ -13,13 +13,13 @@
             <article class="site-section">
                 <a href="/courses/">
                     <h3>Courses</h3>
-                    <p>Courses I done made</p>
+                    <p>Complete courses I've made on different platforms</p>
                 </a>
             </article>
             <article class="site-section">
                 <a href="/articles/">
                     <h3>Articles</h3>
-                    <p>Articles I done wrote</p>
+                    <p>Articles I've written on various topics</p>
                 </a>
             </article>
             <article class="site-section">
@@ -34,7 +34,7 @@
     <section>
         <h2>Latest</h2>
         <div class="even-grid">
-            {{#get "posts" limit="6"}}
+            {{#get "posts" limit="6" filter="primary_tag:-Courses"}}
             {{#foreach posts}}
             <article class="article-preview">
                 <a href="{{url}}">

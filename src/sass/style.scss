@@ -258,3 +258,8 @@ img.post-feature {
     max-width: 100%;
   }
 }
+
+.p > img { // for inline icons
+  height: 1.5em;
+  margin: -0.4em -0.1em;
+}
