@@ -276,3 +276,10 @@ img.post-feature {
   border-left: 5px solid black;
   font-style: italic;
 }
+
+.content > pre {
+  background: #f9f9f9;
+  border-radius: 0.5em;
+  padding: 1em;
+  border: 1px solid #eee;
+}
