@@ -2,8 +2,7 @@
 
 <div class="general-header">
 	<h1>Articles</h1>
-	<p>Maybe it’s educational, maybe it’s interesting, maybe neither.</p>
-	<p>Here are the things I cared enough to write about.</p>
+	<p>Here is everything I've written, divided up by category.</p>
 </div>
 
 <main class="fixed-width-main-content" role="main">
@@ -18,7 +17,7 @@
 				<p><a href="{{url}}">All {{name}} Articles <span class="caret">▶</span></a></p>
 			</div>
 
-			{{#get "posts" filter="primary_tag:{{slug}}" limit="2"}}
+			{{#get "posts" filter="tag:{{slug}}" limit="2"}}
 			{{#foreach posts}}
 			<article class="article-preview">
 				<a href="{{url}}">
