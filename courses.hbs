@@ -8,10 +8,14 @@
 
     {{#get "posts" filter="primary_tag:courses"}}
     {{#foreach posts}}
-    <section class="header-section">
-        <h2>{{title}}</h2>
+    <section class="course">
+        <a href="{{url}}">
+            <h2>{{title}}</h2>
+        </a>
         <div class="course-display">
-            <img src="{{feature_image}}" alt="">
+            <a href="{{url}}">
+                <img src="{{feature_image}}" alt="">
+            </a>
             <div class="course-metadata">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
                     {{date format="MMMM YYYY"}}
