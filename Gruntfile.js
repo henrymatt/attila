@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
   'use strict';
+  const sass = require('sass');
   require('load-grunt-tasks')(grunt, {
     pattern: ['grunt-*']
   });
@@ -39,6 +40,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           includePaths: ['<%= config.cssSrcDir %>'],
+          implementation: sass,
           sourceMaps: true
         },
         files: {
@@ -47,7 +49,9 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'compressed',
+          implementation: sass,
+          sourceMaps: true
         },
         files: {
           'assets/<%=  config.cssTargetDir %>/style.css': '<%=  config.cssSrcDir %>/style.scss'
