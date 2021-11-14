@@ -1,7 +1,7 @@
 {
   "name": "fancy",
   "description": "Theme for Ghost, forked from Attila",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "engines": {
     "ghost": ">=2.1.0",
     "ghost-api": "v2"
@@ -10,7 +10,7 @@
   "author": {
     "name": "Matt Henry",
     "email": "matt@henrymatt.com",
-    "url": "https://www.henrymatt.com"
+    "url": "https://www.fancymatt.com"
   },
   "gpm": {
     "type": "theme",
